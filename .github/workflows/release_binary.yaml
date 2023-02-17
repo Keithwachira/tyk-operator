@@ -20,12 +20,7 @@ jobs:
         with:
           # either 'goreleaser' (default) or 'goreleaser-pro'
           version: latest
-          args: -f .goreleaser_binary.yml release --rm-dist
+          args: release --rm-dist -f .goreleaser_binary.yml
 
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-      - name: Upload assets
-        uses: actions/upload-artifact@v3
-        with:
-          name: tyk-operator
-          path: dist/*
