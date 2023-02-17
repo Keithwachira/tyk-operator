@@ -17,18 +17,6 @@ archives:
       windows: Windows
       386: i386
       amd64: x86_64
-brews:
-  -
-    tap:
-      owner: keithwachira
-      name: tyk-operator
-      branch: prebuild-scoop-binaries
-
-    commit_author:
-      name: goreleaserbot
-      email: bot@goreleaser.com
-    folder: HomebrewFormula
-    homepage: "https://github.com/TykTechnologies/tyk-operator"
 checksum:
   name_template: 'checksums.txt'
 snapshot:
